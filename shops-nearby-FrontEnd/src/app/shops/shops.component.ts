@@ -23,10 +23,11 @@ export class ShopsComponent implements OnInit{
       }
     });
   }
-  likeShopmethod(idShop){
-    this.service.likeShop(idShop).subscribe(res=>{
+  likeShopmethod(shop){
+    let result =shop.name
+    this.service.likeShop(shop.id).subscribe(res=>{
       if(res) {
-        alert('shop liked');
+        alert(result+' liked');
         this.ngOnInit();
     }
     }); 

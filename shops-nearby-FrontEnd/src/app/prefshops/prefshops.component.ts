@@ -26,10 +26,12 @@ export class PrefshopsComponent implements OnInit {
     );
     this.ispreferred =true;
   }
-  onRemoveShop(idShop){
-    this.service.removeShop(idShop).subscribe(res=>{
+  onRemoveShop(shop){
+    let result =shop.name;
+    
+    this.service.removeShop(shop.id).subscribe(res=>{
       if(res){
-        alert('shops removed from the list of preferred');
+        alert(result+' removed from the list of preferred');
         this.ngOnInit();
       }     
     });

@@ -5,8 +5,8 @@
     <!--<p class="card-text">{{ product.price | currency:'USD':true }}</p>-->
   </div>
   <div class="card-footer">
-    <a *ngIf="!isPreferedShopCard" (click)="onLikeShop(shop.id)" class="btn btn-primary" style="background-color: green; border-color: green; margin-right: 5px;">Like</a>
-    <a *ngIf="!isPreferedShopCard" (click)="onDislikeShop(shop.id)" class="btn btn-danger">Dislike</a>
-    <a *ngIf="isPreferedShopCard" (click)="onRemoveShop(shop.id)"class="btn btn-danger">Remove</a>
+    <a *ngIf="!isPreferedShopCard" (click)="onLikeShop(shop)" class="btn btn-primary" style="background-color: green; border-color: green; margin-right: 5px;">Like</a>
+    <a *ngIf="!isPreferedShopCard" (click)="onDislikeShop(shop)" class="btn btn-danger">Dislike</a>
+    <a *ngIf="isPreferedShopCard" (click)="onRemoveShop(shop)"class="btn btn-danger">Remove</a>
   </div>
 </div>  

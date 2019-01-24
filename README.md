@@ -46,11 +46,19 @@ Once you logged In you have the permission to navigate to the nearby shops and y
 
 The nearby shops will be displayed with name, picture and two buttons like and dislike.
 
-You can like a nearby shop, once you do that that, it will be displayed in you preferred shops component and automatically will be removed from the list of nearby shops.
+![](imageNearbyShops/listshops.png)
 
-If you still do not like any nearby shop and navigate to the preferred shops, a message will display with &#39;you should like some shops&#39;, else the shops will be displayed with name, picture and a button remove.
+
+You can like a nearby shop, once you do that that, it will be displayed in you preferred shops component and automatically will be removed from the list of nearby shops.
+![](imageNearbyShops/onLikeShop.png)
+![](imageNearbyShops/prefshopsbeforlike.png)
+
+If you still do not like any nearby shop and navigate to the preferred shops, a message will display with &#39;Go Like some shops&#39;, else the shops will be displayed with name, picture and a button remove.
+
+![](imageNearbyShops/prefShopsafterlike.png)
 
 Once you click on the remove button the shop will be removed from your preferred shops and it will be displayed again at the nearbyShops
+![](imageNearbyShops/onRemove.png)
 
 #
 
