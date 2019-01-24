@@ -13,19 +13,19 @@ NEARBY-SHOPS is a web application, builded with ANGULAR 7 at client side and JAV
 ## Development tools
 
 1. Client Side :
-   1. Angular7
-   1. Bootstrap
+   * Angular7
+   * Bootstrap
 
 1. Server Side :
 
-   1. Java 8
-   1. Maven
-   1. Spring Boot 1.1.RELEASE
-   1. Sring data jpa
-   1. Spring Rest
-   1. Spring security
-   1. Json web token
-   1. MySql
+   * Java 8
+   * Maven
+   * Spring Boot 1.1.RELEASE
+   * Sring data jpa
+   * Spring Rest
+   * Spring security
+   * Json web token
+   * MySql
 
 
 
@@ -66,17 +66,19 @@ Once you click on the remove button the shop will be removed from your preferred
 ## Installation
 
 1. download or clone the code source from the git repository
-   `git clone http://github.com/mrnobody3/Nearby-Shops`
+   > `git clone http://github.com/mrnobody3/Nearby-Shops`
 1. Navigate to the directory downloaded
-   `cd [Path to Nearby-Shops]`
+   > `cd [Path to Nearby-Shops]`
 1. Navigate to the backend server and apply this commands to run the application
-   `maven package`
-   `mvn install`
-   `mvn spring-boot:run`
+   > `cd [Path to Nearby-Shops/Shops-nearby-BackEnd]`
+   > `maven package`
+   > `mvn install`
+   > `mvn spring-boot:run`
 1. Navigate the frontend server and apply this commands
-   `npm install`
-   `ng serve`
-1. Go to [http://localhost:4200] (http://localhost:4200)
+   > `cd [Path to Nearby-Shops/shops-nearby-FrontEnd]`
+   > `npm install`
+   > `ng serve`
+1. Go to (http://localhost:4200)
 
 
 #
