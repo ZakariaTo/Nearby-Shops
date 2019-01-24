@@ -38,12 +38,12 @@ public class CommandLineAppStartupRunner implements CommandLineRunner{
 		List<Shop> shops=new ArrayList<>();
 		user.setEmail("test@gmail.com");
 		user.setFullName("Zakaria Tourabi");
-		user.setPassword(passwordEncoder.encode("062896"));
+		user.setPassword(passwordEncoder.encode("06289602"));
 		user.setUserName("zakaria");
 		System.out.println("Adding User");
 		
 		userRepos.save(user);
-		System.out.println("User added");
+		System.out.println("a default user added with username: zakaria & password = 06289602");
 		shop.setName("Shop1");
 		shop.setPicture("https://www.julianhouse.org.uk/wp-content/uploads/2013/03/1-walcot-st-shopfront.jpg");
 		System.out.println("Adding Shops...");
@@ -52,39 +52,7 @@ public class CommandLineAppStartupRunner implements CommandLineRunner{
 		shopRepos.save(shop3);
 		shopRepos.save(shop4);
 		System.out.println("Shops added");
-		System.out.println("********************************");
-		System.out.println("first list Shop");
-		shops=shopsService.getAllShops(user.getId());
-		for(Shop s : shops) {
-			System.out.println(s.getName());
-		}
-		System.out.println("********************************");
-		System.out.println("********************************");
-		System.out.println("like shop1");
-		shopsService.likeShop(user.getId(), shop.getId());
-		System.out.println("shop liked"+shop.getName());
-		System.out.println("********************************");
-		System.out.println("********************************");
-		System.out.println("Second list Shop");
-		shops=shopsService.getAllShops(user.getId());
 		
-		for(Shop s : shops) {
-			System.out.println(s.getName());
-		}
-		System.out.println("********************************");
-		System.out.println("********************************");
-		System.out.println("like shop2");
-		shopsService.likeShop(user.getId(), shop2.getId());
-		System.out.println("shop liked"+shop2.getName());
-		System.out.println("********************************");
-		System.out.println("********************************");
-		System.out.println("last list Shop");
-		shops=shopsService.getAllShops(user.getId());
-		
-		for(Shop s : shops) {
-			System.out.println(s.getName());
-		}
-		System.out.println("********************************");
 		
 			
 	}
