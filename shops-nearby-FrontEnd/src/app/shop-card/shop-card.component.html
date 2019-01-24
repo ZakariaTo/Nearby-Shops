@@ -1,0 +1,12 @@
+<div *ngIf="shop.name" class="card">
+  <img *ngIf="shop.picture" class="card-img-top" [src]="shop.picture" alt="{{ shop.name }}" />
+  <div class="card-body">
+    <h4 class="card-title">{{ shop.name }}</h4>
+    <!--<p class="card-text">{{ product.price | currency:'USD':true }}</p>-->
+  </div>
+  <div class="card-footer">
+    <a *ngIf="!isPreferedShopCard" (click)="onLikeShop(shop.id)" class="btn btn-primary" style="background-color: green; border-color: green; margin-right: 5px;">Like</a>
+    <a *ngIf="!isPreferedShopCard" (click)="onDislikeShop(shop.id)" class="btn btn-danger">Dislike</a>
+    <a *ngIf="isPreferedShopCard" (click)="onRemoveShop(shop.id)"class="btn btn-danger">Remove</a>
+  </div>
+</div>  

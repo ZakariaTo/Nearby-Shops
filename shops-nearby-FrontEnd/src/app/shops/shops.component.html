@@ -1,0 +1,10 @@
+<div class="container">
+<h1 *ngIf ="shopsIsEmpty; else elseBlock">All shops are liked<a routerLink='/preferredShop'>Go preferred Shops</a></h1>
+<ng-template #elseBlock>
+      <div class="card-group">
+            <ng-container *ngFor="let s of shops; let i = index">
+                  <shop-card [shop]="s" (like)="likeShopmethod($event)"></shop-card>
+            </ng-container>
+      </div>
+</ng-template>
+</div>

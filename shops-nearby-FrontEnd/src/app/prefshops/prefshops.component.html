@@ -1,0 +1,10 @@
+<div class="container">
+<div class="card-group">
+  <h1 *ngIf ="shopsIsEmpty; else elseBlock"><a routerLink='/listShops'>Go Like some shops</a></h1>
+  <ng-template #elseBlock>
+    <ng-container *ngFor="let s of shops; let i = index">
+      <shop-card [shop]="s" [preferedshop] = "ispreferred" (Remove)=onRemoveShop($event) ></shop-card>
+    </ng-container>
+  </ng-template>
+</div>
+</div>

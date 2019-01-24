@@ -1,0 +1,23 @@
+<nav class="navbar navbar-light navbar-expand-lg" style="background-color: #e3f2fd;">
+    <a class="navbar-brand">Shops Nearby</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+          <li *ngIf="auth.isloggedIn()" routerLinkActive="active current">
+            <a class="nav-link" routerLink='/listShops'>Nearby Shops</a>
+          </li>
+          <li *ngIf="auth.isloggedIn()" routerLinkActive="active current">
+            <a class="nav-link" routerLink='/preferredShop'>My Prefered shops</a>
+          </li>
+      </ul>
+      <div class="navbar-text" *ngIf="auth.isloggedIn()">
+        <span> Welcome {{ auth.currentUser.name }} </span>
+        <span (click)="logout()" style="color : blue; cursor: pointer;">logout</span>
+      </div>
+      <div class="navbar-text" *ngIf="!auth.isloggedIn()">
+          <a class="nav-link" routerLink='signin'>SignIn</a>
+      </div>
+    </div>
+</nav>
