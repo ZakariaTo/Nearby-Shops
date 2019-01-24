@@ -70,19 +70,14 @@ Once you click on the remove button the shop will be removed from your preferred
 1. Navigate to the directory downloaded
    > `cd [Path to Nearby-Shops]`
 1. Navigate to the backend server and apply this commands to run the application
-   > `cd [Path to Nearby-Shops/Shops-nearby-BackEnd]`
-   > `maven package`
-   > `mvn install`
-   > `mvn spring-boot:run`
+   * `cd [Path to Nearby-Shops/Shops-nearby-BackEnd]`
+   * `maven package`
+   * `mvn install`
+   * `mvn spring-boot:run`
 1. Navigate the frontend server and apply this commands
-   > `cd [Path to Nearby-Shops/shops-nearby-FrontEnd]`
-   > `npm install`
-   > `ng serve`
+   * `cd [Path to Nearby-Shops/shops-nearby-FrontEnd]`
+   * `npm install`
+   * `ng serve`
 1. Go to (http://localhost:4200)
 
 
-#
-
-#
-
-#
