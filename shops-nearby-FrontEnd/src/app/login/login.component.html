@@ -1,22 +1,3 @@
-<!-- <div class="container text-center">
-<form class="form-signin" #f="ngForm" (ngSubmit)="signIn(f.value)">
-  <h2 class="h3 mb-3 font-weight-normal">Please sign in</h2>
-  <div *ngIf="invalidLogin" class="alert alert-danger">Invalid username and/or password.</div>
-  <div class="form-label-group">
-    <label for="inputUsername" class="sr-only">Username</label>
-    <input type="text" id="inputUsername" name="username" ngModel #username="ngModel" class="form-control" placeholder="Username" required autofocus>
-    <div class="alert alert-danger" *ngIf="username.touched && username.invalid">Username Required</div>
-  </div>
-  <div class="form-label-group"> 
-    <input type="password" id="inputPassword" name="password" ngModel #password="ngModel" class="form-control" placeholder="Password" required> 
-    <label for="inputPassword" class="sr-only">Password</label>
-    <div class="alert alert-danger" *ngIf="password.touched && password.invalid">Password Required</div>
-  </div>
- 
-  <button class="btn btn-lg btn-primary btn-block" type="submit" [disabled]="!f.valid">Sign in</button>
-</form>
-<a routerLink='/signup'>Don't have an accout ?</a>
-</div> -->
 <div class="container text-center">
   <form class="form-signin" #f="ngForm" (ngSubmit)="signIn(f.value)">
       <h2 class="h3 mb-3 font-weight-normal">Please sign in</h2>
